@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../09-NodeJS"
+		},
+		{
+			"path": "../../practice/node_example"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../05-Third-Party-APIs"
+		}
+	],
+	"settings": {}
+}
