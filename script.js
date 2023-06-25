@@ -36,7 +36,16 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&
         return res.json()
      }).then(function(data){
          console.log(data);
-         // var lat = data[0].lat
+        const city = data.city.name;
+
+        const cityTag = document.createElement('h2');
+        cityTag.append(city);
+
+
+        document.querySelector('.currentCity').append(cityTag)
+
+
+// var lat = data[0].lat
          // var lon = data[0].lon
          // getWeather(lat,lon);
      })
@@ -56,7 +65,3 @@ searchbtn.addEventListener('click', function(){
     getGeo(city);
 })
 
-// document.addEventListener('load', function(event){
-//     event.preventDefault()
-//     console.log('ok');
-// })

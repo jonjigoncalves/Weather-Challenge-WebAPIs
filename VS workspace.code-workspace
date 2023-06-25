@@ -10,7 +10,7 @@
 			"path": "."
 		},
 		{
-			"path": "../../05-Third-Party-APIs"
+			"path": "../../06-Server-Side-APIs"
 		}
 	],
 	"settings": {}
