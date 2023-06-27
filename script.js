@@ -1,6 +1,6 @@
-var searchbtn = document.getElementById('search-btn')
-var apiKey = '5fb3261485fbd16f27a2aaa4d57b4602'
-var cities =JSON.parse(localStorage.getItem('cities'))||[]
+var searchbtn = document.querySelector('.btn');
+var apiKey = '5fb3261485fbd16f27a2aaa4d57b4602';
+var cities =JSON.parse(localStorage.getItem('cities'))||[];
 
 
 function getGeo(city){
@@ -13,7 +13,7 @@ function getGeo(city){
         var lon = data[0].lon
         getWeather(lat,lon);
     })
-    // getWeather('51.4875167', '-0.1687007');
+  
 }
 function getWeather(lat,lon){
     console.log(lat,lon);
@@ -35,26 +35,29 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&
     .then(function(res){
         return res.json()
      }).then(function(data){
-         console.log(data);
+
+        var cardGroup = document.querySelector('.card-group');
+      cardGroup.innerHTML = '';
+        
+ 
         const city = data.city.name;
 
         const cityTag = document.createElement('h2');
         cityTag.append(city);
 
 
-        document.querySelector('.currentCity').append(cityTag)
+        document.querySelector('.currentCity').append(cityTag);
 
 
-// var lat = data[0].lat
-         // var lon = data[0].lon
-         // getWeather(lat,lon);
-     })
+
+     });
 }
 
 searchbtn.addEventListener('click', function(){
-    var city = document.querySelector('.input').value
+    var city = document.querySelector('.form-control ').value;
     if(city ===''){
         return ;
+        
     }
     if(!cities.includes(city)){
         cities.push(city)

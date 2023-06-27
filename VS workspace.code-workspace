@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../../06-Server-Side-APIs"
+		},
+		{
+			"path": "../../10-OOP"
 		}
 	],
 	"settings": {}
