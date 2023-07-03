@@ -1,6 +1,9 @@
 var searchbtn = document.querySelector('.btn');
 var apiKey = '5fb3261485fbd16f27a2aaa4d57b4602';
 var cities = JSON.parse(localStorage.getItem('cities')) || [];
+var cityInput = document.querySelector('.form-control');
+var weatherData = [];
+
 
 function getGeo(city) {
   console.log(city);
@@ -25,45 +28,35 @@ function getWeather(lat, lon) {
     })
     .then(function (data) {
       console.log(data);
+      weatherData.push(data);
       getFiveDayForecast(lat, lon);
     });
- 
 }
 
-
-function getFiveDayForecast(lat,lon){
-console.log(lat,lon);
-fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&appid='+apiKey)
-    .then(function(res){
-        return res.json()
-     }).then(function(data){
-
-    //     var cardGroup = document.querySelector('.card-group');
-    //   cardGroup.innerHTML = '';
-         
-    //     const city = data.city.name;
-    //     const cityTag = document.createElement('h2');
-    //     cityTag.append(city);
-    //     document.querySelector('.currentCity').append(cityTag);
-    //     console.log(city);
-
-
-
-     });
+function getFiveDayForecast(lat, lon) {
+  console.log(lat, lon);
+  fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=' + apiKey)
+    .then(function (res) {
+      return res.json()
+    })
+    .then(function (data) {
+        for (var i = 0; i < data.list.length; i++) {
+            var forecast = data.list[i];
+            
+        
+        }
+    });
 }
 
 searchbtn.addEventListener('click', function(){
-    var city = document.querySelector('.form-control ').value;
-    if(city ===''){
+    var city = cityInput.value;
+    if(city === '') {
         return ;
-        
     }
-    if(!cities.includes(city)){
-        cities.push(city)
-        
+    if(!cities.includes(city)) {
+        cities.push(city);
     }
-    localStorage.setItem('cities',JSON.stringify(cities))
+    localStorage.setItem('cities', JSON.stringify(cities));
     console.log(cities);
     getGeo(city);
-})
-
+});
