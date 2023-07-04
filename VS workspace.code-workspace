@@ -1,9 +1,6 @@
 {
 	"folders": [
 		{
-			"path": "../../09-NodeJS"
-		},
-		{
 			"path": "../../practice/node_example"
 		},
 		{
@@ -11,18 +8,6 @@
 		},
 		{
 			"path": "../../06-Server-Side-APIs"
-		},
-		{
-			"path": "../../10-OOP"
-		},
-		{
-			"path": "../../practice/OOP JS"
-		},
-		{
-			"path": "../../practice/express basics"
-		},
-		{
-			"path": "../../11-Express"
 		}
 	],
 	"settings": {}
