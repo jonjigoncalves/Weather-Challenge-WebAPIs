@@ -13,7 +13,7 @@ body {
     background-color: #E6E1C5;
 }
 
-html.body {
+html, body {
     height: 100%;
 
 }
@@ -117,4 +117,9 @@ h2.date {
 
 .city-button:hover {
     background-color: #000000;
+}
+
+.footer{
+    
+    bottom: 0;
 }
