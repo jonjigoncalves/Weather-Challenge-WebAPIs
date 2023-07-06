@@ -40,6 +40,9 @@ The Application was tested by the author on the above date
 
 *Button for Previously search cities is working
 
+![Image Description](./images/screenshot.JPG)
+
+
 
 - - -
 © Jonathan Goncalves
