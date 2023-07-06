@@ -24,7 +24,7 @@
 
   </header>
 
-  <h1 class="title text-center">5 Day Forcast</h1>
+  <h1 class="title text-center">5 Day Forecast</h1>
 
   <div class="container ">
     <nav class="navbar ">
@@ -38,108 +38,34 @@
   </div>
 
 
-<main class="container-fluid" style="border: 1px solid black; margin-top: 5em;">
-  <div class="row">
-    <div class="col-12" id="currentWeather" style="border: 1px solid red;"></div>
+  <div class="list pt-5 text-center">
+    <h2 class="searched">Search History</h2>
+    <div  id="cityButtons"></div>
+  </div>
+
+
+<main class="container-fluid" >
+  <div class="row text-center">
+    <h2 class="currentTitle">Today's Weather</h2>
+    <div class="col-6 offset-3">
+      <div class="panel hide" id="currentWeather" ></div>
+  </div>
   </div>
   
-  <div class="row" style="border: 1px solid blue;"></div>
-    <!-- <div class="container-weather">
-      <div class="container-img">
-        <div class="img">
-          <p class="forecast" id="firstDay"></p>
-          <div class="icon"><img class="iconClass" src="" alt="weather image" srcset=""></div>
-          
-          <p class="tempature">Pending</p>
-          <p class="windSpeed">Pending</p>
-          <p class="humidity">Pending</p>
 
+  <div class="row fiveDay" ">
+    <h3 class="forecastTitle text-center">Five Day Forecast</h3>
+    <div class="text-center hide" id="fiveDayForecast">
 
-        </div>
-        
-        </div>
-      </div>
+    </div>
 
-      
-    <div class="container-weather">
-      <div class="container-img">
-        <div class="img">
-          <p class="forecast" id="secondDay"></p>
-          <div class="icon"><img class="iconClass" src="" alt="weather image" srcset=""></div>
-          
-          <p class="tempature">Pending</p>
-          <p class="windSpeed">Pending</p>
-          <p class="humidity">Pending</p>
-
-
-        </div>
-        
-        </div>
-      </div>
-
-      
-    <div class="container-weather">
-      <div class="container-img">
-        <div class="img">
-          <p class="forecast" id="thirdDay"></p>
-          <div class="icon"><img class="iconClass" src="" alt="weather image" srcset=""></div>
-          
-          <p class="tempature">Pending</p>
-          <p class="windSpeed">Pending</p>
-          <p class="humidity">Pending</p>
-
-
-        </div>
-        
-        </div>
-      </div>
-
-      
-    <div class="container-weather">
-      <div class="container-img">
-        <div class="img">
-          <p class="forecast" id="fourthDay"></p>
-          <div class="icon"><img class="iconClass" src="" alt="weather image" srcset=""></div>
-          
-          <p class="tempature">Pending</p>
-          <p class="windSpeed">Pending</p>
-          <p class="humidity">Pending</p>
-
-
-        </div>
-        
-        </div>
-      </div>
-
-      
-    <div class="container-weather">
-      <div class="container-img">
-        <div class="img">
-          <p class="forecast" id="fifthDay"></p>
-          <div class="icon"><img class="iconClass" src="" alt="weather image" srcset=""></div>
-          
-          <p class="tempature">Pending</p>
-          <p class="windSpeed">Pending</p>
-          <p class="humidity">Pending</p>
-
-        </div>
-        
-        </div>
-      </div> -->
-
+  </div>
+  
     
 </main>
       
 
-    <!-- <div class="row">
-    <div class="col-3">
-      <input class="input" type="text">
-      <button id="search-btn">Search</button>
-    </div> -->
-<!-- 
-    <div class="currentCity"></div>
-    </div>
-   -->
+  
    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/897bbcaa05.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
