@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    background-color: #E6E1C5;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+main {
+    padding-top: 5%;
+}
+
+.card-group {
+    padding-top: 5%;
+}
+
+.panel {
+
+    border: 10px solid #395C6B;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    color: whitesmoke;
+    background-color: #D4CB92;
+}
+
+.hide {
+    display: none;
+}
+
+div.row.fiveDay {
+    margin-top: 50px;
+}
+
+div.row.fiveDay>h3 {
+    font-size: 2.5rem;
+}
+
+
+.forecast-row {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#fiveDayForecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+/* .day-card{
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+} */
+
+
+h2.date {
+    font-size: 1.5rem;  
+    margin: 5px;
+    background-color: #BCD3F2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .humidity,
+  .wind {
+    font-size: 14px;
+    color: #666;
+  }
+
+#cityButtons {
+    margin: 20px;
+}
+
+.city-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #80A4ED;
+    color: whitesmoke;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.city-button:hover {
+    background-color: #000000;
+}
+
+.footer{
+    
+    bottom: 0;
+}

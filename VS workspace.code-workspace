@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../practice/node_example"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../06-Server-Side-APIs"
+		}
+	],
+	"settings": {}
+}
